@@ -1,0 +1,79 @@
+*{
+  font-family: Fira Code;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body{
+  /* background: -moz-linear-gradient(top,white 0%,#e5e5e5 100%);
+  background: -webkit-linear-gradient(top,white 0%,#e5e5e5 100%);
+  background: linear-gradient(to bottom,white 0%,#e5e5e5 100%); */
+  background-color: black;
+}
+
+h1{
+  background-color: white;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  border-radius: 5%;
+}
+
+.container{
+  width: 635px;
+  margin: 100px auto 0 auto;
+  position: relative;
+  
+}
+
+.slider{
+  height: 332px;
+}
+
+.slider img{
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+#nav{
+  list-style-type: none;
+  z-index: 0;
+}
+
+#nav li a{
+  display: block;
+  width: 58px;
+  height: 102px;
+  text-indent: -9999px;
+  outline: none;
+}
+
+#prev a{
+  background: url(./back.png);
+  
+}
+
+#left{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 240px;
+  left: -95px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+#right{
+  color: grey;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 240px;
+  right: -130px;
+  border-radius: 50%;
+  border: 2px white solid;
+  background-color: white;
+}

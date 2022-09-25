@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>JQuery Image Slider</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Slider</h1>
+    <div class="slider">
+      <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1" width="640" height="426">
+      <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2" width="640" height="426">
+      <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3" width="640" height="426">
+      <img src="https://images.unsplash.com/photo-1483356256511-b48749959172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Nature Image #4" width="640" height="426">
+      <img src="https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80" alt="Nature Image #5" width="640" height="426">
+    </div>
+
+    <ul id="nav">
+        <li id="prev"><a href=""><img src="./img/back-button.png" id ="left" alt=""></a></li>
+      <li id="next"><a href=""><img id="right" src="./img/right.png" alt=""></a></li>
+    </ul>
+
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').cycle({
+        fx: 'zoom',
+        pause: 2,
+        prev: '#prev',
+        next: '#next'
+      });
+    });
+  </script>
+</body>
+</html>
